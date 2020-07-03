@@ -13,18 +13,21 @@ Project is created with:
 * React version: 16.13.1
 	
 ## Setup
+Execute the data scraping scripts or use the uploaded corpus.
+Create Elasticsearch instance and index, execute the data migration script to upload the documents.
+
 Clone the repository
 
 ```
 $ git clone https://github.com/sadilchamishka/Sinhala-Song-Book.git
 ```
-SetUp Express Server
+Setup Express Server
 ```
 $ cd NodeBackEnd
 $ npm install
 $ npm start
 ```
-SetUp React Server
+Setup React Server
 ```
 $ cd ReactFrontEnd
 $ npm install
