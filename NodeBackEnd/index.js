@@ -1,12 +1,13 @@
 const elasticsearch = require('elasticsearch');
 const express = require( 'express' );
 const bodyParser = require('body-parser')
-const path  = require( 'path' );
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
-app.set( 'port', process.env.PORT || 3001 );
-app.use( express.static( path.join( __dirname, 'public' )));
+app.set( 'port', process.env.PORT);
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
@@ -15,7 +16,7 @@ app.use(function(req, res, next) {
   });
 
 const client = new elasticsearch.Client({
-   hosts: [ 'http://ec2-54-237-78-151.compute-1.amazonaws.com:9200']
+   hosts: [process.env.ELASTICSEARCH_CLUSTER]
 });
 
 client.ping({
@@ -29,12 +30,6 @@ client.ping({
      }
  });
  
-
-app.get('/', function(req, res){
-  res.sendFile('template.html', {
-     root: path.join( __dirname, 'views' )
-   });
-})
 
 // define the /search route that should return elastic search results 
 app.post('/search', function (req, res){
