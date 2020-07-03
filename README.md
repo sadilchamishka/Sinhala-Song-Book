@@ -15,7 +15,7 @@ Project is created with:
 
 ## Corpus
 [lyricslk.com](http://lyricslk.com/)
-### Attributes
+#### Attributes
 1. `track_id` - track identifier
 2. `track_name_en` - track name in Singlish
 3. `track_name_si` - track name in Sinhala (using Sinhala unicode)
@@ -28,7 +28,7 @@ Project is created with:
 10. `lyrics` - Sinhala lyrics of the song (using Sinhala unicode)
 
 [sinhalajukebox.org](http://www.sinhalajukebox.org/)
-### Attributes
+#### Attributes
 1. `track_id` - track identifier
 2. `title` - song title in Singlish
 3. `Duration` - format of HH:MM:SS
@@ -39,7 +39,21 @@ Project is created with:
 ## Setup
 Execute the data scraping scripts or use the uploaded corpus.
 
-Create Elasticsearch instance and index, execute the data migration script to upload the documents.
+Create Elasticsearch instance 
+```
+$ curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+$ sudo apt update
+$ sudo apt install elasticsearch
+$ sudo systemctl start elasticsearch
+```
+
+Create a new index in elasticsearch insatnce.
+```
+curl -X PUT "localhost:9200/sinhalasongs?pretty"
+```
+
+Execute the data migration script to upload the documents to elasticsearch.
 
 Clone the repository
 
