@@ -75,5 +75,4 @@ $ npm install
 $ npm start
 ```
 ## Screeshots
-
-![alt text](https://github.com/binodmx/sinhala-songs-search-engine/blob/master/screenshots/1.jpg?raw=true)
+![alt text](https://github.com/sadilchamishka/Sinhala-Song-Book/blob/master/Screanshots/Frontend.png?raw=true)
