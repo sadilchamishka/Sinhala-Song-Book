@@ -130,7 +130,7 @@ app.get('/landpage', function (req, res){
     }
   }
   // perform the actual search passing in the index, the search query and the type
-  client.search({index:'sinhala_songs',  body:body})
+  client.search({index:process.env.INDEX,  body:body})
   .then(results => {
     res.send(results.hits.hits);
   })
