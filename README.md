@@ -6,6 +6,8 @@ Sinhala song search engine enrich with over 10000 sinhala songs corpus
 * [Technologies](#technologies)
 * [Corpus](#corpus)
 * [Setup](#setup)
+* [Screeshots](#screeshots)
+
 	
 ## Technologies
 Project is created with:
