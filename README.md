@@ -60,6 +60,8 @@ Clone the repository
 ```
 $ git clone https://github.com/sadilchamishka/Sinhala-Song-Book.git
 ```
+Edit configurations in .env file
+
 Setup Express Server
 ```
 $ cd NodeBackEnd
