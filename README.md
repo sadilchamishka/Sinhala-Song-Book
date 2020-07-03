@@ -5,7 +5,6 @@ Sinhala song search engine enrich with over 10000 sinhala songs corpus
 ## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
-** [Setup1](#setup1)
 	
 ## Technologies
 Project is created with:
@@ -14,12 +13,20 @@ Project is created with:
 * React version: 16.13.1
 	
 ## Setup
-To run this project, install it locally using npm:
+Clone the repository
 
 ```
-$ cd ../lorem
+$ git clone https://github.com/sadilchamishka/Sinhala-Song-Book.git
+```
+SetUp Express Server
+```
+$ cd NodeBackEnd
 $ npm install
 $ npm start
 ```
-## Setup1
-To run this project, install it locally using npm:
+SetUp React Server
+```
+$cd ReactFrontEnd
+$ npm install
+$ npm start
+```
