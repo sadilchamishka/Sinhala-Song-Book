@@ -1,18 +1,20 @@
 # Sinhala-Song-Book
 
+Sinhala song search engine enrich with over 10000 sinhala songs corpus 
+
 ## Table of contents
-* [General info](#general-info)
+* [General info](#Quick start)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## General info
+## Quick start
 This project is simple Lorem ipsum dolor generator.
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* Elasticsearch version: 7.6
+* Node version: 8.10.0
+* React version: 16.13.1
 	
 ## Setup
 To run this project, install it locally using npm:
