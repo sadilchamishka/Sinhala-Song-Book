@@ -3,7 +3,7 @@
 Sinhala song search engine enrich with over 10000 sinhala songs corpus 
 
 ## Table of contents
-* [General info](#Quick start)
+* [Quick start](#Quick start)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
