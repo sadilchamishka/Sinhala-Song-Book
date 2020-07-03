@@ -26,7 +26,7 @@ $ npm start
 ```
 SetUp React Server
 ```
-$cd ReactFrontEnd
+$ cd ReactFrontEnd
 $ npm install
 $ npm start
 ```
