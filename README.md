@@ -74,3 +74,6 @@ $ cd ReactFrontEnd
 $ npm install
 $ npm start
 ```
+## Screeshots
+
+![alt text](https://github.com/binodmx/sinhala-songs-search-engine/blob/master/screenshots/1.jpg?raw=true)
